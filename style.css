@@ -6,32 +6,176 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
-.fake-browser-ui {
-    padding: 20px 0 0;
-    border-radius: 3px;
-    border-bottom: 2px solid #ccc;
-    background: #ddd;
-    display: inline-block;
-    position: relative;
-    line-height: 0;
+
+p {
+  font-family: 'Lato', sans-serif;
+  color: black;
+
 }
 
-.fake-browser-ui .frame {
-    display: block;
-    height: 15px;
-    position: absolute;
-    top: 5px;
-    left: 1px;
+#background-text{
+  display:block;
+  height: 350px;
+  width:460px;
+  text-indent:-9999px;
+  position: fixed;
+  top: 40px;
+  left:300px;
 }
 
-.fake-browser-ui span {
-    height: 8px;
-    width: 8px;
-    border-radius: 8px;
-    background-color: #eee;
-    border: 1px solid #dadada;
-    float: left;
-    margin: 0 0 0 4px;
+#background-text2{
+  display:block;
+  height:70px;
+  width:700px;
+  text-indent:-9999px;
+  position: fixed;
+  top: 390px;
+  left:200px;
+}
+
+#hyperlink {
+  background: url(images/dashboard.jpg) no-repeat  ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: block;
+  /*margin: 0 auto;*/
+  text-indent: -9999px;
+  width: 981px;
+  height: 400px;
+}
+
+#hyperlink2 {
+  background: url(images/watcher.jpg) no-repeat  ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: block;
+  /*margin: 0 auto;*/
+  text-indent: -9999px;
+  width: 981px;
+  height: 400px;
+}
+
+#hyperlink3 {
+  background: url(images/notes.jpg) no-repeat  ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: block;
+  /*margin: 0 auto;*/
+  text-indent: -9999px;
+  width: 981px;
+  height: 400px;
+}
+
+#hyperlink4 {
+  background: url(images/ss-site.jpg) no-repeat  ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: block;
+  /*margin: 0 auto;*/
+  text-indent: -9999px;
+  width: 981px;
+  height: 400px;
+}
+
+#hyperlink5 {
+  background: url(images/key-page.jpg) no-repeat  ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: block;
+  /*margin: 0 auto;*/
+  text-indent: -9999px;
+  width: 981px;
+  height: 400px;
+}
+
+#hyperlink6 {
+  background: url(images/warning.jpg) no-repeat  ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: block;
+  /*margin: 0 auto;*/
+  text-indent: -9999px;
+  width: 981px;
+  height: 400px;
+}
+
+#access {
+  display: block;
+  position: fixed;
+  top: 365px;
+  left:790px;
+}
+
+#reset {
+  display: block;
+  position: fixed;
+  top: 350px;
+  left:790px;
+}
+
+#about {
+  display: block;
+  position: fixed;
+  top: 260px;
+  left:120px;
+}
+
+#help {
+  display: block;
+  position: fixed;
+  top: 260px;
+  left:325px;
+}
+
+#music {
+  display: block;
+  position: fixed;
+  top: 260px;
+  left:550px;
+}
+
+.triangle{
+  height: 350px;
+  width:460px;
+  position: fixed;
+  top: 40px;
+  left:900px;
+}
+
+#key {
+  display: block;
+  position: fixed;
+  top: 200px;
+  left:325px;
+}
+
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.triangle {
+    animation: blink 2s;
+    animation-iteration-count: infinite;
 }
 
 /*popup window styling*/
@@ -50,6 +194,7 @@ html {
 	-moz-transition: opacity 200ms ease-in;
 	transition: opacity 200ms ease-in;
 	pointer-events: none;
+
 }
 
 .modalDialog:target {
@@ -65,14 +210,48 @@ html {
 	padding: 20px 20px 20px 20px; /*text to border margin*/
 	border-radius: 0px;
 	background: #fff;
-	/*background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);*/
+}
+
+.modalDialog2 p {
+  font-size: 48px;
+  text-align: center;
+}
+.modalDialog2 {
+	position: fixed;
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+	top: 100px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99999;
+	opacity:0;
+	/*-webkit-transition: opacity 200ms ease-in;
+	-moz-transition: opacity 200ms ease-in;
+	transition: opacity 200ms ease-in;*/
+	pointer-events: none;
+
+}
+
+.modalDialog2:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog2 > div {
+	width: 980px; /*text width*/
+  height: 300px;
+	position: relative;
+	margin: 3% auto;
+	padding: 20px 20px 20px 20px; /*text to border margin*/
+	border-radius: 0px;
+	background: #ff3a2a;
 }
 
 .modal-body {
     max-height: calc(100vh - 210px);
     overflow-y: auto;
+
 }
 
 .close {
@@ -94,7 +273,9 @@ html {
 	box-shadow: 1px 1px 3px #000;
 }
 
-.close:hover { background: #00d9ff; }
+.close:hover { background: #ff3a2a; }
+
+
 
 
 /*icon alignment*/

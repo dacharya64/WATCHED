@@ -38,20 +38,3 @@ span{
 ::selection{
   background: white;
 }
-
-/*hides text after a delay*/
-
-/*
-.hide {
-  -webkit-animation-name: hideit;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in;
-  -webkit-animation-delay: 8s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes hideit {
-  0% { opacity: 0; }
-  100% { opacity: 0; }
-}*/
